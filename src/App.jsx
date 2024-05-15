@@ -11,10 +11,23 @@ function App() {
     setTodos(newTodoList)
   }
 
+  function handleDeleteTodo(index) {
+    const newTodoList = todos.filter((todo, todoIndex) => {
+      return todoIndex !== index
+    })
+    setTodos(newTodoList)
+  }
+
+  function handleEditTodo(index) {
+    const valueToBeEdited = todos[index]
+    setTodoValue(valueToBeEdited)
+    handleDeleteTodo(index)
+  }
+
   return (
     <>
       <TodoInput todoValue={todoValue} setTodoValue={setTodoValue} handleAddTodos={handleAddTodos} />
-      <TodoList todos={todos} handleAddTodos={handleAddTodos}/>
+      <TodoList todos={todos} handleAddTodos={handleAddTodos} handleDeleteTodo={handleDeleteTodo} handleEditTodo={handleEditTodo}/>
     </>
   )
 }
