@@ -1,6 +1,6 @@
 {
-  "name": "reactjs-todolist",
-  "private": true,
+  "name": "todo-app",
+  "private": false,
   "version": "0.0.0",
   "homepage": "https://uxdruh.github.io/todo-app",
   "type": "module",
