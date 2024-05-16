@@ -18,9 +18,14 @@ button {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  padding: 14px;
-  background: #eff6ff;
+  padding: 50px;
+  background: #ececec;
   gap: 14px;
+}
+
+::selection {
+  color: #fff;
+  background: rgb(146, 148, 149);
 }
 
 header {
