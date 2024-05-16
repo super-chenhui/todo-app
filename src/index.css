@@ -18,7 +18,7 @@ button {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  padding: 50px;
+  padding: 60px;
   background: #ececec;
   gap: 14px;
 }
@@ -105,6 +105,23 @@ p {
 
 .actionsContainer button:hover {
   opacity: 0.7;
+}
+
+footer {
+  position: fixed;
+  bottom: 15px;
+  left: 10px;
+  display: flex;
+  align-items: stretch;
+}
+
+footer button {
+  border-radius: 30px;
+  background: transparent;
+  cursor: pointer;
+  padding: 16px 10px;
+  border: none;
+  outline: none;
 }
 
 

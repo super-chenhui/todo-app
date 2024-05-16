@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react"
 import TodoInput from "./components/TodoInput"
 import TodoList from "./components/TodoList"
+import Link from "./components/Link"
 
 function App() {
   const [todos, setTodos] = useState([])
@@ -48,6 +49,7 @@ function App() {
     <>
       <TodoInput todoValue={todoValue} setTodoValue={setTodoValue} handleAddTodos={handleAddTodos} />
       <TodoList todos={todos} handleAddTodos={handleAddTodos} handleDeleteTodo={handleDeleteTodo} handleEditTodo={handleEditTodo} />
+      <Link />
     </>
   )
 }
